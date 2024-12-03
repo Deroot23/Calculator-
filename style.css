@@ -1,0 +1,96 @@
+body {
+    font-family: "Poppins", Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: #ffffff;
+}
+
+.calculator h2 {
+    color: #1d0303;
+    text-align: center;
+}
+
+.calculator {
+    border: 5px solid #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+    width: 350px;
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+}
+
+.display {
+    background: #f0f4f8;
+    padding: 20px;
+    text-align: right;
+    border-bottom: 3px solid #e0e0e0;
+}
+
+#result {
+    width: calc(100% - 60px);
+    font-size: 2em;
+    color: #333333;
+    background: #ffffff;
+    border: 2px solid #1d0303;
+    text-align: right;
+    outline: none;
+    border-radius: 10px;
+    padding: 10px;
+    margin-left: 17px;
+    margin-top: 1px;
+}
+
+.keys {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 20px;
+    justify-content: center;
+    background: #f8f9fb;
+}
+
+button {
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333333;
+    cursor: pointer;
+    width: 70px;
+    height: 70px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #fbc2eb, #a6c1ee);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+button:active {
+    transform: scale(0.95);
+    background: linear-gradient(135deg, #ffdde1, #ffe3ec);
+}
+
+/* Add special styling for equal button */
+button.equal {
+    background: linear-gradient(135deg, #66ff99, #33cc99);
+    color: white;
+    font-size: 1.5em;
+}
+
+button.equal:hover {
+    background: linear-gradient(135deg, #33cc99, #28a745);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+button.equal:active {
+    transform: scale(0.9);
+}
